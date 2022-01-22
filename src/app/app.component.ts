@@ -42,7 +42,13 @@ export class AppComponent {
 		searchTerm = searchTerm.toLowerCase();
 		for(let i=0; i < this.sourceList.length; i++) {
 			let name = this.sourceList[i].name.toLowerCase();
+			// Bonus 2: Allow user to search Type names.
+			let type = this.sourceList[i].type.toLocaleLowerCase();
 			if (name.indexOf(searchTerm) >= 0) {
+				matchingSatellites.push(this.sourceList[i]);
+			}
+			// Bonus 2: Condition filters Type existing in Satellite array
+			if (type.indexOf(searchTerm) >= 0) {
 				matchingSatellites.push(this.sourceList[i]);
 			}
 		}
