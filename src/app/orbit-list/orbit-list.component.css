@@ -7,6 +7,10 @@
 	background-color: #da8a8a;
 }
 
+.isColored {
+	background-color: rgb(185, 142, 255);
+}
+
 table {
  color: #111;
  border-radius: 5px;

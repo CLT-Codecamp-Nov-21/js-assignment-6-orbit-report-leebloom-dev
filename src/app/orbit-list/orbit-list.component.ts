@@ -27,4 +27,13 @@ export class OrbitListComponent implements OnInit {
 		});
 	}
 
+	isOddRow(): boolean {
+		if (this.satellites.length % 2 === 1) {
+			return true;			
+		} else {
+			return false;
+		}
+	}
+
+
 }
