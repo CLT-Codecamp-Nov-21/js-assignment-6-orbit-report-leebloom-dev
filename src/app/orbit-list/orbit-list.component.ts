@@ -27,6 +27,4 @@ export class OrbitListComponent implements OnInit {
 		});
 	}
 
-	isSpaceDebris() {}
-
 }
